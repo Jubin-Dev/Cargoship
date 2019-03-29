@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Camera.dart';
 import 'pregatein.dart';
 import 'survey.dart';
 //import '../../layout_type.dart';
@@ -21,7 +22,7 @@ class Init_screen extends StatelessWidget {
     return new Container(
       child:
       new DefaultTabController(
-        length: 2,
+        length: 3,
         
         child: new Scaffold(
             appBar: new AppBar(
@@ -66,7 +67,9 @@ class Init_screen extends StatelessWidget {
               //               onPressed: (){},),
             //  ],
             bottom: new TabBar(
-              tabs: <Widget>[Tab(text: "Pre Gate In",), Tab(text: "Survey",),]
+              tabs: <Widget>[Tab(text: "Pre Gate In",), Tab(text: "Survey",),
+               Tab(text: "Camera",)
+               ]
             ),
           ),
           body: new TabBarView(
@@ -81,6 +84,10 @@ class Init_screen extends StatelessWidget {
               new Container( 
                 child:
                    Survey(),
+                  ),
+                   new Container( 
+                child:
+                   Camera(),
                   ),
             ],
           ),

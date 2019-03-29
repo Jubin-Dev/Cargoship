@@ -3,7 +3,7 @@ import 'src/app.dart';
 //import 'src/screens/Init_screen.dart';
 //import 'src/screens/login_screen.dart';
 
-//void main() => runApp(App());
+// void main() => runApp(App());
 
 void main() { // 1
   runApp( // 2

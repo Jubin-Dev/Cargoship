@@ -82,8 +82,7 @@ class Validators
         //sink.addError('Enter data.');
         //sink.addError(Stream.empty());
       }
-  });
-
-
+  }
+  );
 }
 
